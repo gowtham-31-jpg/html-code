@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #e6f0ff 0%, #f5faff 100%);
+            /* Simple alternative options (uncomment one if you prefer):
+            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9fd 100%);
+            background: linear-gradient(to right, #f0f9ff, #e0f2fe);
+            */
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230203/pngtree-simple-aesthetic-pastel-color-background-with-hand-drawn-leaves-image_1540985.jpg");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 100%;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            /* optional soft glass effect */
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(200, 220, 255, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a202c;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 1.05rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+        }
+
+        select {
+            appearance: none;
+
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background-color: #4299e1;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #3182ce;
+        }
+
+        .small-text {
+            text-align: center;
+            margin-top: 24px;
+            color: #718096;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>Sign Up</h1>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" name="firstname" placeholder="Full name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+                <select name="city" required>
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="ongole">Ongole</option>
+                    <option value="vijayawada">Vijayawada</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="vizag">Visakhapatnam</option>
+                    <option value="guntur">Guntur</option>
+                </select>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <div class="small-text">
+                By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
